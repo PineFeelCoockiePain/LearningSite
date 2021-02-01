@@ -3,47 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>HMTPK</title>
-
+    <link rel="shortcut icon" href="pic/HMTPKicon.svg" >
     <script>
 
     </script>
     <style type="text/css">
         .pic_description {
             background: #147ABD;
-            width: 100%;
+            margin: -1%;
+            padding: 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .picTPK {
+            max-width: 2500px;
+            flex-basis: 35%;
         }
         .descTPK {
-            color: white;
-            font-size: 30px;
+            color: black;
+            font-size: 3vw;
+            flex-basis: 60%;
+            text-align: center;
         }
     </style>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="home.css">
 </head>
 <body class="home_body">
-    <header>
-        <div class="home_header">
-            Пример текста, ибо я ещё не знаю, что сюда вставить
-        </div>
-    </header>
     <main>
-    <div class="pic_description">
-        <div class="picTPK">
-            <img alt="Логотип ХМТПК" src="pic/HMTPKnew.png" width="40%">
+        <div class="pic_description">
+            <table>
+                <div class="picTPK">
+                    <img alt="Логотип ХМТПК" src="pic/HMTPK.svg">
+                </div>
+                <div class="descTPK">
+                    <p style="margin-bottom: -20px">Автономное учереждение профессионального обучения Ханты-Мансийского автономного округа - Югры</p>
+                    <p>Ханты-Мансийский технолого-педагогический колледж</p>
+                    <p style="margin-top: -20px">Профессиональные пробы по специальности 09.02.07 (Информационные системы и программирование)</p>
+                </div>
+            </table>
         </div>
-        <div class="descTPK">
-            <p>Автономное учереждение профессионального обучения Ханты-Мансийского автономного округа - Югры</p>
-            <p>Ханты-Мансийский технолого-педагогический колледж</p>
+        <div class="content"> <!-- Тут поменять текст и налить воды (тип просто описание), ибо это всё же не полное
+        руководство, а просто челы будут сами себе сертификат писать -->
+            <p>«Уроки по HTML и CSS» являются простым и полным руководством, целью которого служит помощь начинающим при
+                обучении HTML и CSS.
+            </p>
+            <p>
+                <a href="wave.html">
+                    "Начать путешествие"
+                </a>
+            </p>
         </div>
-    </div>
-    <div class="content"> <!-- Тут поменять текст, ибо это всё же не полное руководство, а просто челы будут сами себе сертификат писать -->
-        «Уроки по HTML и CSS» являются простым и полным руководством, целью которого служит помощь начинающим при
-        обучении HTML и CSS.
-        <a href="wave.html">
-            Начать путешествие
-        </a>
-    </div>
-    <div class="bg"></div><!--Это для фона в главном-->
+        <div class="bg"></div><!--Это для фона в главном-->
     </main>
 </body>
 </html>
