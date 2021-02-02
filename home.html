@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>HMTPK</title>
@@ -12,13 +12,14 @@
             background: #147ABD;
             padding: 5%;
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
             justify-content: space-around;
             align-items: center;
         }
-        .picTPK {
+        #picTPK {
             max-width: 2500px;
             flex-basis: 30%;
+            min-width: 480px;
         }
         .descTPK {
             flex-basis: 60%;
@@ -42,7 +43,7 @@
     <main>
         <div class="pic_description">
             <table>
-                <div class="picTPK">
+                <div id="picTPK">
                     <img alt="Логотип ХМТПК" src="pic/HMTPK.svg">
                 </div>
                 <div class="descTPK">
@@ -59,13 +60,29 @@
                 обучении HTML и CSS.
             </div>
             <div class="lang-desc">
-
+                <ul>
+                    <li>
+                        <p title="HyperText Markup Language (язык гипертекстовой разметки)- код, который используется для структурирования и отображения веб-страницы и её контента.">
+                            HTML
+                        </p>
+                    </li>
+                    <li>
+                        <p title="Каскадные таблицы стилей (Cascading Style Sheets = CSS ) — это язык, который отвечает за визуальное представление документов пользователю. Под документом мы будем понимать набор информации о структуре страницы, описываемый языком разметки.">
+                            CSS
+                        </p>
+                    </li>
+                    <li>
+                        <p title="JavaScript – это язык программирования, который добавляет интерактивность на ваш веб-сайт (например: игры, отклик при нажатии кнопок или при вводе данных в формы, динамические стили, анимация).">
+                            JavaScript
+                        </p>
+                    </li>
+                </ul>
             </div>
             <div class="desc_button">
             <span class="ser">
                 Начние обучение прямо сейчас
             </span>
-                <a href="grmota.html">
+                <a href="wave.html">
                     <div class="button">
                         Начать обучение
                     </div>

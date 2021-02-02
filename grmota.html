@@ -1,10 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HMTPK</title>
+    <link rel="shortcut icon" href="pic/HMTPKicon.svg" >
+    <script>
+
+    </script>
+    <style>
+        body {
+            width: 210mm;
+            height: 297mm
+        }
+        .top, .mid, .bot, .footer-bottom {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+        #picTPK {
+            width: 60mm;
+        }
+        #TPKdesc {
+            text-align: center;
+        }
+
+        .footer-top {
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
 </head>
 <body>
+    <main>
+        <div class="top">
+            <div id="picTPK">
+                <img alt="Логотип ТПК" src="pic/HMTPK.svg">
+            </div>
+            <div id="TPKdesc">
+                Автономное учреждение профессионального образования<br>
+                Ханты-Мансийского автономного округа- Югры<br>
+                <div style="text-transform: uppercase"><q>Ханты-Мансийский технолого-педагогический колледж</q></div>
+            </div>
+        </div>
+        <div class="mid">
+            <div id="sertifikat" style="text-transform: uppercase">
+                Сертификат
+            </div>
+            <div id="vruchaetsa" style="text-transform: lowercase">
+                Вручается
+            </div>
+            <div id="my_name">
 
+            </div>
+        </div>
+        <div class="bot">
+            <div id="uchactniku" style="text-transform: uppercase">
+                <b>Участнику</b>
+            </div>
+            <div id="uch_desc">
+                Профессиональных проб по специальности 09.02.07<br>
+                «Информационные системы и программирование»
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div id="zam_dir1">
+                Зам. директора по ООД
+            </div>
+            <div id="zam_dir2">
+                Е.Ю. Смирнов
+            </div>
+        </div>
+        <div class="footer-bottom">
+            г. Ханты-Мансийск, 2021г.
+        </div>
+    </footer>
 </body>
 </html>
