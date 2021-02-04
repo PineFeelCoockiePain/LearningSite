@@ -35,6 +35,108 @@
             font-size: 3vw;
             padding-top: 10vh;
         }
+        .intro{
+            width: 100%;
+            height: 65vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .button{
+
+            text-transform: uppercase;
+            padding: 20px;
+            margin: 0 auto;
+            color: #05614c;
+            background-color: #ffffff;
+            font-size: 30px;
+            font-family: "Segoe UI Semibold";
+            width: 50%;
+            max-width: 300px;
+            text-align: center;
+            border-radius: 50px 50px 50px 50px;
+        }
+
+        .ser{
+            text-transform: uppercase;
+            margin: 0 auto;
+            color: #fff;
+            font-size: 24px;
+            font-family: "Segoe UI Black";
+            width: 100%;
+            padding: 10px;
+            max-width: 800px;
+            text-align: center;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        .content{
+            background: linear-gradient(180deg, #147ABD, #FFFFFF);
+        }
+
+        .button{
+
+            text-transform: uppercase;
+            padding: 20px;
+            margin: 0 auto;
+            color: #05614c;
+            background-color: #ffffff;
+            font-size: 30px;
+            font-family: "Segoe UI Semibold";
+            width: 50%;
+            max-width: 300px;
+            text-align: center;
+            border-radius: 50px 50px 50px 50px;
+        }
+
+        .columns{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            max-width: 90%;
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-family: "Segoe UI Semibold";
+        }
+
+        .column-1{
+            color: #ffffff;
+            padding: 40px;
+            margin-right: 5%;
+            width: 25%;
+            float: left;
+            min-height: 100%;
+            background: radial-gradient(#1b2b4d, #592dc8);
+        }
+
+        .column-2 {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 40px;
+            margin-right: 5%;
+            width: 25%;
+            min-height: 100%;
+            float: left;
+            margin-left: 5%;
+            background: radial-gradient(#e91d1d, #e91d57);
+        }
+
+        .column-3 {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 40px;
+            margin-left: 5%;
+            width: 25%;
+            min-height: 100%;
+            float: left;
+            background: radial-gradient(#de801a, #e76016);
+        }
     </style>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="home.css">
@@ -55,40 +157,22 @@
         </div>
         <div class="content"> <!-- Тут поменять текст и налить воды (тип просто описание), ибо это всё же не полное
         руководство, а просто челы будут сами себе сертификат писать -->
-            <div class="water">
-                «Уроки по HTML и CSS» являются простым и полным руководством, целью которого служит помощь начинающим при
-                обучении HTML и CSS.
+            <div class="intro">
+                <span class="ser">
+                    <h1>«Уроки по HTML и CSS» являются простым и полным руководством, целью которого служит помощь начинающим при
+                    обучении HTML и CSS.</h1>
+                </span>
             </div>
-            <div class="lang-desc">
-                <ul>
-                    <li>
-                        <p title="HyperText Markup Language (язык гипертекстовой разметки)- код, который используется для структурирования и отображения веб-страницы и её контента.">
-                            HTML
-                        </p>
-                    </li>
-                    <li>
-                        <p title="Каскадные таблицы стилей (Cascading Style Sheets = CSS ) — это язык, который отвечает за визуальное представление документов пользователю. Под документом мы будем понимать набор информации о структуре страницы, описываемый языком разметки.">
-                            CSS
-                        </p>
-                    </li>
-                    <li>
-                        <p title="JavaScript – это язык программирования, который добавляет интерактивность на ваш веб-сайт (например: игры, отклик при нажатии кнопок или при вводе данных в формы, динамические стили, анимация).">
-                            JavaScript
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="desc_button">
-            <span class="ser">
-                Начние обучение прямо сейчас
-            </span>
-                <a href="wave.html">
-                    <div class="button">
-                        Начать обучение
-                    </div>
-                </a>
-            </div>
+            <nav class="columns">
+                <div class="column-1">Html</div>
+                <div class="column-2">CSS</div>
+                <div class="column-3">JavaScript</div>
+            </nav>
+            <a href="#"><div class="button">Начать обучение</div></a>
         </div>
     </main>
+    <footer>
+        <p></p>
+    </footer>
 </body>
 </html>
