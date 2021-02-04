@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Приключение
+    </title>
+    <link rel="shortcut icon" href="pic/HMTPKicon.svg" >
+    <style type="text/css">
+        kbd {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.95em;
+            font-family: "Courier New", monospace;
+            word-break: keep-all;
+            border: 1px solid #e6e6e6;
+            text-shadow: 0 1px white;
+        }
+    </style>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="wave.css">
+</head>
+<body class="home_body"> <!-- Переделай разметку по моему образцу, т.е. main -->
+    <div class=""><!--Ты только не ори на меня, это я потом сокращу по приключение-->
+        Основы HTML
+        <p>
+            1. Структура HTML-документа
+        </p>
+        <p>
+            Язык HTML следует правилам, которые содержатся в файле объявления типа документа (Document Type Definition, или DTD). DTD представляет собой XML-документ, определяющий, какие теги, атрибуты и их значения действительны для конкретного типа HTML.
+        </p>
+        <p>
+            DOCTYPE отвечает за корректное отображение веб-страницы браузером. DOCTYPE определяет не только версию HTML (например, html), но и соответствующий DTD-файл в Интернете.
+        </p>
+        <p>
+            <pre class="">
+                <code class="">
+                    <span class=""><</span><span class="">!DOCTYPE html</span><span class="">></span> <span class=""><</span><span class="">!-- Объявление формата документа --</span><span class="">></span>
+                    <span class=""><</span><span class="">html</span><span class="">></span>
+                    <span class=""><</span><span class="">head</span><span class="">></span> <span class=""><</span><span class="">!-- Техническая информация о документе --</span><span class="">></span>
+                    <span class=""><</span><span class="">meta charset="UTF-8"</span><span class="">></span> <span class=""><</span><span class="">!-- Определяем кодировку символов документа --</span><span class="">></span>
+                    <span class=""><</span><span class="">title>...<</span><span class="">/title</span><span class="">></span> <span class=""><</span><span class="">!-- Задаем заголовок документа --</span><span class="">></span>
+                    <span class=""><</span><span class="">link rel="stylesheet" type="text/css" href="style.css"</span><span class="">></span> <span class=""><</span><span class="">!-- Подключаем внешнию таблицу стилей  --</span><span class="">></span>
+                    <span class=""><</span><span class="">script src="script.js"><</span><span class="">/script</span><span class="">></span> <span class=""><</span><span class="">!-- Подключаем сценарии --</span><span class="">></span>
+                    <span class=""><</span><span class="">/head</span><span class="">></span>
+                    <span class=""><</span><span class="">body</span><span class="">></span> <span class=""><</span><span class="">!-- Основная часть документа --</span><span class="">></span>
+                    <span class=""><</span><span class="">/body</span><span class="">></span>
+                    <span class=""><</span><span class="">/html</span><span class="">></span>
+                </code>
+            </pre>
+        </p>
+        <p>
+            Элементы, находящиеся внутри элемента <kbd><span class=""><</span><span class="">html</span><span class="">></span></kbd>, образуют дерево документа, так называемую объектную модель документа, DOM (document object model). При этом элемент <kbd><span class=""><</span><span class="">/html</span><span class="">></span></kbd> является корневым элементом.
+        </p>
+        <p>
+            <img src="pic/kartinka2.png" alt="Плохое соединение с интернетом :(">
+        </p>
+        <p>
+            1.1 Элемент <kbd><span class=""><</span><span class="">html</span><span class="">></span></kbd>
+        </p>
+        <p>
+            Является корневым элементом документа. Все остальные элементы содержатся внутри <kbd><span class=""><</span><span class="">html>...<</span><span class="">/html</span><span class="">></span></kbd>. Все, что находится за пределами элемента, не воспринимается браузером как HTML-код и никак им не обрабатывается.
+        </p>
+        <p>
+            <table>
+                <tr>
+                    <th>
+                        Атрибут
+                    </th>
+                    <th>
+                        Описание, принимаемое значение
+                    </th>
+                </tr>
+                </tr>
+                    <td>
+                        <kbd>manifest</kbd>
+                    </td>
+                    <td>
+                        С помощью значения атрибута указывается путь к документу кэша манифеста, например: <br> <kbd><span class=""><</span><span class="">html manifest="about_company.appcahe"</span><span class="">></span></kbd>
+                    </td>
+            </table>
+        </p>
+        <p>
+            1.2. Элемент <kbd><span class=""><</span><span class="">head</span><span class="">></span></kbd>
+        </p>
+        <p>
+            Раздел <kbd><span class=""><</span><span class="">head>...<</span><span class="">/head</span><span class="">></span></kbd> содержит техническую информацию о странице: заголовок, описание, ключевые слова для поисковых машин, кодировку и т.д. Введенная в нем информация не отображается в окне браузера, однако содержит данные, которые указывают браузеру, как следует обрабатывать страницу.
+        </p>
+        <p>
+            1.2.1 Элемент <kbd><span class=""><</span><span class="">title</span><span class="">></span></kbd>
+        </p>
+        <p>
+            Обязательным элементом раздела <kbd><span class=""><</span><span class="">head</span><span class="">></span></kbd> является <kbd><span class=""><</span><span class="">title</span><span class="">></span></kbd>. Текст, размещенный внутри элемента <kbd>title</kbd>, отображается в строке заголовка веб-браузера.
+        </p>
+        <p>
+            Длина заголовка должна быть не более 60 символов, чтобы полностью поместиться в заголовке. Текст заголовка должен содержать максимально полное описание содержимого веб-страницы.
+        </p>
+        <p>
+            1.2.2 Элемент <kbd><span class=""><</span><span class="">meta</span><span class="">></span></kbd>
+        </p>
+        <p>
+            Необязательным элементом раздела <kbd><span class=""><</span><span class="">head</span><span class="">></span></kbd> является элемент <kbd><span class=""><</span><span class="">meta</span><span class="">></span></kbd>. С его помощью можно задать описание содержимого страницы и ключевые слова для поисковых машин, автора HTML-документа и прочие свойства метаданных.
+        </p>
+        <p>
+            Элемент <kbd><span class=""><</span><span class="">head</span><span class="">></span></kbd> может содержать несколько элементов <kbd><span class=""><</span><span class="">meta</span><span class="">></span></kbd>, потому что в зависимости от используемых атрибутов они несут различную информацию.
+        </p>
+        <pre class="">
+            <code class="">
+                <span class=""><</span><span class="">meta name="description" content="Описание содержимого страницы"</span><span class="">></span>
+                <span class=""><</span><span class="">meta name="keywords" content="Ключевые слова через запятую"</span><span class="">></span>
+            </code>
+        </pre>
+        <p>
+            Описание содержимого страницы и ключевые слова одновременно можно указывать на нескольких языках, например, на русском и английском:
+        </p>
+        <pre class="">
+            <code class="">
+                <span class=""><</span><span class="">meta name="description" lang="ru" content="Описание содержимого страницы"</span><span class="">></span>
+                <span class=""><</span><span class="">meta name="description" lang="en" content="description"</span><span class="">></span>
+                <span class=""><</span><span class="">meta name="keywords" lang="ru" content="Ключевые слова через запятую"</span><span class="">></span>
+                <span class=""><</span><span class="">meta name="keywords" lang="en" content="Keywords"</span><span class="">></span>
+            </code>
+        </pre>
+        <p>
+            С помощью элемента <kbd><span class=""><</span><span class="">meta</span><span class="">></span></kbd> можно запретить или разрешить индексацию веб-страницы поисковыми машинами
+        </p>
+        <p>
+            Индексация и переход по ссылкам разрешены:
+        </p>
+        <pre class="">
+            <code class="">
+                <span class=""><</span><span class="">meta name="robots" content="index, follow"</span><span class="">></span>
+            </code>
+        </pre>
+        <p>
+            Индексация разрещена, переход по ссылкам запрещены:
+        </p>
+        <pre class="">
+            <code class="">
+                <span class=""><</span><span class="">meta name="robots" content="index, nofollow"</span><span class="">></span>
+            </code>
+        </pre>
+        <p>
+            Индексация и переход по ссылкам запрещены:
+        </p>
+        <pre class="">
+            <code class="">
+                <span class=""><</span><span class="">meta name="robots" content="noindex, nofollow"</span><span class="">></span>
+            </code>
+        </pre>
+        <p>
+            Для автоматической перезагрузки страницы через заданный промежуток времени нужно воспользоваться значением <kbd>refresh</kbd>:
+        </p>
+        <pre class="">
+            <code class="">
+                <span class=""><</span><span class="">meta http-equiv="refresh" content="30"</span><span class="">></span>
+            </code>
+        </pre>
+        <p>
+            Страница будет перезагружена через 30 секунд. Чтобы перебросить посетителя на другую страницу, нужно указать URL-адрес в параметре <kbd>url</kbd>:
+        </p>
+        <pre class="">
+            <code class="">
+                <span class=""><</span><span class="">meta http-equiv="refresh" content="0, url=http://yandex.ru"</span><span class="">></span>
+            </code>
+        </pre>
+        <p>
+            Для элемента <kbd><span class=""><</span><span class="">meta</span><span class="">></span></kbd> доступны атрибуты
+        </p>
+        <p>
+            <table>
+                <tr>
+                    <th>
+                        Атрибут
+                    </th>
+                    <th>
+                        Описание, принимаемое значение
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <kbd>charset</kbd>
+                    </td>
+                    <td>
+                        Указывает кодировку символов для текущего HTML-документа: <kbd><span class=""><</span><span class="">meta charset="UTF-8"</span><span class="">></span></kbd>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <kbd>content</kbd>
+                    </td>
+                    <td>
+                        Содержит произвольный текст, который определяет значение, ассоциируемое с атрибутом <kbd>http-equiv</kbd> или <kbd>name</kbd>, в зависимости от их значения.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <kbd>http-equiv</kbd>
+                    </td>
+                    <td>
+                        Контролирует действия браузера на данной веб-странице (эквивалент HTTP заголовков). При отображении страницы браузер будет следовать инструкциям, заданным в атрибуте:
+                        <br><kbd>default-style</kbd> указывает предпочтительный стиль для использования на странице. Атрибут content должен содержать идентификатор элемента <kbd><span class=""><</span><span class="">link</span><span class="">></span></kbd>, который ссылается на таблицу стилей CSS, или идентификатор элемента <kbd><span class=""><</span><span class="">style</span><span class="">></span></kbd>, содержащего таблицу стилей.
+                        <br><kbd>refresh</kbd> указывает время в секундах до перезагрузки страницы или время до перенаправления на другую страницу, если в атрибуте <kbd>content</kbd> после указания времени идет строка <kbd>"url=адрес_страницы"</kbd>.
+                        <br>Автоматическая перезагрузка страницы через заданный промежуток времени, в данном примере, через 30 секунд:
+                        <br><kbd><span class=""><</span><span class="">meta http-equiv="refresh" content="30"</span><span class="">></span></kbd>
+                        <br>Если необходимо сразу перебросить посетителя на другую страницу, то можно указать URL-адрес в параметре <kbd>url</kbd>:
+                        <br><kbd><span class=""><</span><span class="">meta http-equiv="refresh" content="0; url=http://mail.ru/"</span><span class="">></span></kbd>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <kbd>name</kbd>
+                    </td>
+                    <td>
+                        <br>Ассоциируется со значением, содержащемся в атрибуте <kbd>content</kbd>. Не должен использоваться в случае, если для элемента уже заданы атрибуты <kbd>http-equiv</kbd>, <kbd>charset</kbd> или <kbd>itemprop</kbd>.
+                        <br><kbd>application-name</kbd> указывает название веб-приложения, используемого на странице.
+                        <br><kbd>author</kbd> указывает имя автора документа в свободном формате.
+                        <br><kbd>description</kbd> определяет краткое описание к содержимому страницы, например:
+                        <br><kbd><span class=""><</span><span class="">meta name="description" content="Описание содержимого страницы"</span><span class="">></span></kbd>
+                        <br><kbd>generator</kbd> указывает один из пакетов программного обеспечения, используемого для создания документа, например:
+                        <br><kbd><span class=""><</span><span class="">meta name="generator" content="WordPress 4.0"</span><span class="">></span></kbd>.
+                        <br><kbd>keywords</kbd> содержит список ключевых слов, разделенных запятыми, соответствующих содержимому страницы, например:
+                        <br><kbd><span class=""><</span><span class="">meta name="keywords" content="Ключевые слова через запятую"</span><span class="">></span></kbd>.
+                        <br>Также атрибут <kbd>name</kbd> может принимать следующие значения из расширенной спецификации, такие как <kbd>creator</kbd>, <kbd>googlebot</kbd>, <kbd>publisher</kbd>, <kbd>robots</kbd>, <kbd>slurp</kbd>, <kbd>viewport</kbd>, хотя ни одно из них еще не было официально принято.
+                    </td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            1.2.3. Элемент <kbd><span class=""><</span><span class="">style</span><span class="">></span></kbd>
+        </p>
+        <p>
+            Внутри этого элемента задаются стили, которые используются на странице. Для задания стилей в HTML-документе используется язык CSS. Таких элементов на странице может быть несколько.
+        </p>
+        <p>
+        <table>
+            <tr>
+                <th>
+                    Атрибут
+                </th>
+                <th>
+                    Описание, принимаемое значение
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <kbd>media</kbd>
+                </td>
+                <td>
+                    Определяет, для какого типа устройства предназначены те или иные каскадные таблицы стилей. Внутри таблицы стилей CSS специфичные правила для определенных устройств прописываются с помощью media query.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <kbd>nonce</kbd>
+                </td>
+                <td>
+                Генерируемая случайным образом на сервере строковая переменная, которая устанавливает правила использования встроенных стилей с целью защиты контента. Значение атрибута — строка текста.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <kbd>type</kbd>
+                </td>
+                <td>
+                    Определяет MIME-тип подключаемого файла со стилями, в данном случае <kbd>type="text/css"</kbd>.
+                </td>
+            </tr>
+        </table>
+        </p>
+        <p>
+            Элемент может содержать код форматирования как самих элементов веб-страницы, так и веб-страницы целиком.
+        </p>
+        <p>
+            <pre class="">
+                <code class="">
+                    <span class=""><</span><span class="">style</span><span class="">></span>
+                    <span class="">.</span><span class="">paper</span> <span class="">{</span>
+                    <span class=""> </span><span class=""> </span><span class=""> </span><span class="">wight:</span> <span class="">200px;</span>
+                    <span class=""> </span><span class=""> </span><span class=""> </span><span class="">height:</span> <span class="">300px;</span>
+                    <span class=""> </span><span class=""> </span><span class=""> </span><span class="">background-color:</span> <span class="">#ef4444;</span>
+                    <span class=""> </span><span class=""> </span><span class=""> </span><span class="">color:</span> <span class="">#666666;</span>
+                    <span class="">}</span>
+                    <span class=""><</span><span class="">/style</span><span class="">></span>
+                </code>
+            </pre>
+        </p>
+        <p>
+            Чтобы подключить к элементу заданный стиль, необходимо через атрибут <kbd>class</kbd> (или <kbd>id</kbd>) присвоить элементу соответствующее название:
+        </p>
+        <p>
+            <pre class="">
+                <code class="">
+                    <span class=""><</span><span class="">div class="paper"</span><span class="">></span>
+                    <span class="">...</span>
+                    <span class=""><</span><span class="">/div</span><span class=""></span>
+                </code>
+            </pre>
+        </p>
+        <>
+    </div>
+</body>
+</html>
