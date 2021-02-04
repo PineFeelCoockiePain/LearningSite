@@ -15,7 +15,17 @@
         body {
             width: 210mm;
             height: 297mm;
-            background: linear-gradient(to top, #9696fb, #F8F9FB, #F8F9FB);
+            background: linear-gradient(to top, #9696fb, #F8F9FB, #f8f9fb);
+        }
+        input[type="text"] {
+            border: 0;
+            background: #f8f9fb !important;
+            outline: none;
+            height: 12mm;
+            width: 170mm;
+            text-align: center;
+            color: #000000;
+            font-size: 12mm;
         }
         .top {
             background-image: url("pic/SertificateBg.png");
@@ -33,24 +43,35 @@
             text-align: center;
         }
         #picTPK {
-            margin: 5mm 0 10mm 0;
             width: 40mm;
+            padding: 5mm 0 10mm 0;
         }
         #TPKdesc {
             text-align: center;
             font-size: 5mm;
+            color: #F8F9FB;
         }
         #mid_desc1 {
-            margin: 20mm 0 0 0;
-            font-size: 15mm;
+            padding: 20mm 0 0 0;
+            text-transform: uppercase;
+            font-size: 20mm;
+            color: #F8F9FB;
         }
         #mid_desc2 {
-            margin-top: 10mm;
+            padding: 0 0 5mm 0;
+            text-transform: lowercase;
+            font-size: 12mm;
+        }
+        .bot {
+            padding: 20mm 0 10mm 0;
+            font-size: 7mm;
         }
         footer {
             width: 210mm;
             height: auto;
             flex: 0 0 auto;
+            font-size: 5mm;
+            font-weight: bold;
         }
         #rukovoditel, #sekretar {
             margin-left: 10mm;
@@ -72,31 +93,33 @@
                 Ханты-Мансийского автономного округа- Югры<br>
                 <div style="text-transform: uppercase"><q>Ханты-Мансийский технолого-педагогический колледж</q></div>
             </div>
-            <div id="mid_desc1" style="text-transform: uppercase">
+            <div id="mid_desc1">
                 Сертификат
             </div>
-            <div id="mid_desc2" style="text-transform: lowercase">
+            <div id="mid_desc2">
                 Свидетельствует о том, что
             </div>
             <div id="my_name">
-                <input>
+                <label>
+                    <input type="text" placeholder="Имя Фамилия">
+                </label>
             </div>
         </div>
         <div class="bot">
             <div id="bot_desc1" style="text-align: center">
                 <p>
                     Прошёл(а) курсы профессиональных проб в
-                </p>
+                </p><br>
                 <p>
                     бюджетном учреждении профессионального образования<br>
                     Ханты-Мансийского автономного округа- Югры<br>
                     <q>Ханты-Мансийский технолого педагогический колледж</q>
-                </p>
+                </p><br>
                 <p>
                     По дополнительной общеразвивающей программе<br>
                     введение в специальность<br>
                     <q>Информационные системы и программирование</q>
-                </p>
+                </p><br>
                 <p>
                     в объёме
                 </p>
