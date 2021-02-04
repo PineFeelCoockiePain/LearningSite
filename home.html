@@ -9,7 +9,7 @@
     </script>
     <style type="text/css">
         .pic_description {
-            background: #147ABD;
+            background: #147abd;
             padding: 5%;
             display: flex;
             flex-flow: row nowrap;
@@ -35,60 +35,33 @@
             font-size: 3vw;
             padding-top: 10vh;
         }
+
         .intro{
             width: 100%;
-            height: 65vh;
+            height: 40vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             margin: 0 auto;
         }
 
-        .button{
-
-            text-transform: uppercase;
-            padding: 20px;
-            margin: 0 auto;
-            color: #05614c;
-            background-color: #ffffff;
-            font-size: 30px;
-            font-family: "Segoe UI Semibold";
-            width: 50%;
-            max-width: 300px;
-            text-align: center;
-            border-radius: 50px 50px 50px 50px;
+        .content{
+            background: linear-gradient(180deg, #147ABD, #FFFFFF);
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
         }
 
         .ser{
             text-transform: uppercase;
             margin: 0 auto;
             color: #fff;
-            font-size: 24px;
+            font-size: 50px;
             font-family: "Segoe UI Black";
             width: 100%;
-            padding: 10px;
-            max-width: 800px;
+            max-width: 1250px;
             text-align: center;
             border-radius: 10px 10px 10px 10px;
-        }
-
-        .content{
-            background: linear-gradient(180deg, #147ABD, #FFFFFF);
-        }
-
-        .button{
-
-            text-transform: uppercase;
-            padding: 20px;
-            margin: 0 auto;
-            color: #05614c;
-            background-color: #ffffff;
-            font-size: 30px;
-            font-family: "Segoe UI Semibold";
-            width: 50%;
-            max-width: 300px;
-            text-align: center;
-            border-radius: 50px 50px 50px 50px;
         }
 
         .columns{
@@ -105,37 +78,50 @@
             font-family: "Segoe UI Semibold";
         }
 
-        .column-1{
+        .column-1, .column-2, .column-3 {
             color: #ffffff;
+            text-decoration: none;
             padding: 40px;
-            margin-right: 5%;
             width: 25%;
             float: left;
             min-height: 100%;
-            background: radial-gradient(#1b2b4d, #592dc8);
+        }
+
+        .column-1{
+            background: radial-gradient(#f16529, #e44d26);
+            margin-right: 5%;
         }
 
         .column-2 {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 40px;
+            background: radial-gradient(#29a8e0, #0070ba);
             margin-right: 5%;
-            width: 25%;
-            min-height: 100%;
-            float: left;
             margin-left: 5%;
-            background: radial-gradient(#e91d1d, #e91d57);
         }
 
         .column-3 {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 40px;
+            background: radial-gradient(#8acf17, #63a814);
             margin-left: 5%;
-            width: 25%;
-            min-height: 100%;
-            float: left;
-            background: radial-gradient(#de801a, #e76016);
+        }
+
+        .btn {
+            height: 6vw;
+            padding-top: 10vh;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .button{
+            text-transform: uppercase;
+            padding: 30px;
+            margin: 0 auto;
+            color: #ffffff;
+            background-color: #411b72;
+            font-size: 30px;
+            font-family: "Segoe UI Semibold";
+            width: 50%;
+            max-width: 300px;
+            text-align: center;
+            border-radius: 50px 50px 50px 50px;
         }
     </style>
     <link rel="stylesheet" href="common.css">
@@ -155,12 +141,11 @@
                 </div>
             </table>
         </div>
-        <div class="content"> <!-- Тут поменять текст и налить воды (тип просто описание), ибо это всё же не полное
-        руководство, а просто челы будут сами себе сертификат писать -->
+        <div class="content">
             <div class="intro">
                 <span class="ser">
-                    <h1>«Уроки по HTML и CSS» являются простым и полным руководством, целью которого служит помощь начинающим при
-                    обучении HTML и CSS.</h1>
+                    <p>«Уроки по HTML и CSS» являются простым руководством, целью которого служит помощь начинающим при
+                    обучении HTML и CSS.</p>
                 </span>
             </div>
             <nav class="columns">
@@ -168,7 +153,9 @@
                 <div class="column-2">CSS</div>
                 <div class="column-3">JavaScript</div>
             </nav>
-            <a href="#"><div class="button">Начать обучение</div></a>
+            <div div class="btn">
+                <a href="zadania_html.html" class="button">Начать обучение</a>
+            </div>
         </div>
     </main>
     <footer>
