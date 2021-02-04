@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>HMTPK</title>
+    <title>Сертификат</title>
     <link rel="shortcut icon" href="pic/HMTPKicon.svg" >
     <script>
 
@@ -10,12 +10,17 @@
     <style>
         body {
             width: 210mm;
-            height: 297mm
+            height: 297mm;
+            background: linear-gradient(to top, #2773df, #F8F9FB, #F8F9FB);
+
         }
         .top, .mid, .bot, .footer-bottom {
             display: flex;
             flex-flow: column nowrap;
+        }
+        .top, .mid, .footer-bottom {
             align-items: center;
+            text-align: center;
         }
         #picTPK {
             width: 60mm;
@@ -25,8 +30,8 @@
         }
 
         .footer-top {
+            display: flex;
             flex-flow: row nowrap;
-            align-items: center;
             justify-content: space-between;
         }
     </style>
@@ -44,33 +49,59 @@
             </div>
         </div>
         <div class="mid">
-            <div id="sertifikat" style="text-transform: uppercase">
+            <div id="mid_desc1" style="text-transform: uppercase">
                 Сертификат
             </div>
-            <div id="vruchaetsa" style="text-transform: lowercase">
-                Вручается
+            <div id="mid_desc2" style="text-transform: lowercase">
+                Свидетельствует о том, что
             </div>
             <div id="my_name">
-
+                <input>
             </div>
         </div>
         <div class="bot">
-            <div id="uchactniku" style="text-transform: uppercase">
-                <b>Участнику</b>
+            <div id="bot_desc1" style="text-align: center">
+                <p>
+                    Прошёл(а) курсы профессиональных проб в
+                </p>
+                <p>
+                    Бюджетном учреждении профессионального образования<br>
+                    Ханты-Мансийского автономного округа- Югры<br>
+                    <q>Ханты-Мансийский технолого педагогический колледж</q>
+                </p>
+                <p>
+                    По дополнительной профессиональной программе<br>
+                    по специальности 09.02.07<br>
+                    <q>Информационные системы и программирование</q>
+                </p>
+                <p>
+                    в объёме
+                </p>
             </div>
-            <div id="uch_desc">
-                Профессиональных проб по специальности 09.02.07<br>
-                «Информационные системы и программирование»
+            <div id="bot_desc2">
+                <p style="text-align: right;">
+                    12 часов
+                </p>
             </div>
         </div>
     </main>
     <footer>
         <div class="footer-top">
-            <div id="zam_dir1">
-                Зам. директора по ООД
+            <div id="rukovoditel">
+                <p id="rukovoditel1">
+                    Руководитель
+                </p>
+                <p id="rukovoditel2">
+                    Саробаров А.Б.
+                </p>
             </div>
-            <div id="zam_dir2">
-                Е.Ю. Смирнов
+            <div id="sekretar">
+                <p id="sekretar1">
+                    Секретарь
+                </p>
+                <p id="sekretar2">
+                    Шмидт Е.В.
+                </p>
             </div>
         </div>
         <div class="footer-bottom">
