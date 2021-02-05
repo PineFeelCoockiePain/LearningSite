@@ -4,85 +4,7 @@
     <meta charset="UTF-8">
     <title>Сертификат</title>
     <link rel="shortcut icon" href="pic/HMTPKicon.svg" >
-    <script>
-
-    </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans+Condensed:wght@300&family=Roboto+Condensed:wght@700&display=swap');
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            width: 210mm;
-            height: 297mm;
-            background: linear-gradient(to top, #9696fb, #f8f9fb, #f8f9fb);
-        }
-        input[type="text"] {
-            border: 0;
-            background: #f8f9fb !important;
-            outline: none;
-            height: 12mm;
-            width: 170mm;
-            text-align: center;
-            color: #000000;
-            font-size: 12mm;
-        }
-        .top {
-            background-image: url("pic/SertificateBg.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        main, footer {
-        }
-        .top, .bot, .footer-bottom {
-            display: flex;
-            flex-flow: column nowrap;
-        }
-        .top, .footer-bottom {
-            align-items: center;
-            text-align: center;
-        }
-        #picTPK {
-            width: 40mm;
-            padding: 5mm 0 10mm 0;
-        }
-        #TPKdesc {
-            text-align: center;
-            font-size: 5mm;
-            color: #F8F9FB;
-        }
-        #mid_desc1 {
-            padding: 20mm 0 0 0;
-            text-transform: uppercase;
-            font-family: 'Roboto Condensed', sans-serif;
-            font-size: 20mm;
-            color: #F8F9FB;
-        }
-        #mid_desc2 {
-            padding: 0 0 5mm 0;
-            text-transform: lowercase;
-            font-size: 12mm;
-        }
-        .bot {
-            padding: 10mm 0 10mm 0;
-            font-size: 7mm;
-        }
-        footer {
-            width: 210mm;
-            height: auto;
-            flex: 0 0 auto;
-            font-size: 5mm;
-            font-weight: bold;
-        }
-        #rukovoditel, #sekretar {
-            margin-left: 10mm;
-            margin-right: 10mm;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-        }
-    </style>
+    <link rel="stylesheet" href="gramota.css">
 </head>
 <body>
     <main>
@@ -108,7 +30,7 @@
             </div>
         </div>
         <div class="bot">
-            <div id="bot_desc1" style="text-align: center">
+            <div id="bot_desc1">
                 <p>
                     Прошёл(а) курсы профессиональных проб в
                 </p><br>
@@ -127,7 +49,7 @@
                 </p>
             </div>
             <div id="bot_desc2">
-                <p style="text-align: right; padding-right: 10mm">
+                <p>
                     12 часов
                 </p>
             </div>
