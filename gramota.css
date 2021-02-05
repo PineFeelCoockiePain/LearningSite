@@ -18,13 +18,6 @@ input[type="text"] {
     color: #000000;
     font-size: 12mm;
 }
-.top {
-    background-image: url("pic/SertificateBg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-main, footer {
-}
 .top, .bot, .footer-bottom {
     display: flex;
     flex-flow: column nowrap;
@@ -32,6 +25,11 @@ main, footer {
 .top, .footer-bottom {
     align-items: center;
     text-align: center;
+}
+.top {
+    background-image: url("pic/SertificateBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #picTPK {
     width: 40mm;
