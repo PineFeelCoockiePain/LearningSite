@@ -31,6 +31,13 @@ input[type="text"] {
     background-repeat: no-repeat;
     background-size: cover;
 }
+footer {
+    width: 210mm;
+    height: auto;
+    flex: 0 0 auto;
+    font-size: 5mm;
+    font-weight: bold;
+}
 #picTPK {
     width: 40mm;
     padding: 5mm 0 10mm 0;
@@ -62,13 +69,6 @@ input[type="text"] {
 #bot_desc2 {
     text-align: right;
     padding-right: 10mm;
-}
-footer {
-    width: 210mm;
-    height: auto;
-    flex: 0 0 auto;
-    font-size: 5mm;
-    font-weight: bold;
 }
 #rukovoditel, #sekretar {
     margin-left: 10mm;

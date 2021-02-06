@@ -16,19 +16,9 @@ style
 body {
 style
 }
-Если вы хотите использовать шрифты с google fonts, нужно импортировать его в начале файла
-С помощью функции @import url('ссылка')
-Пример:
+В html файл вашего сертификата импортируйте css файл в нижнюю часть <head>
+<link rel="stylesheet" href="sertificate.css">
+Осталось только его отредактировать
+Импортируйте шрифты с помощью данной функции [потом изменю шрифты, но путь пока будет так]
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans+Condensed:wght@300&family=Roboto+Condensed:wght@700&display=swap');
-Задаём выравнивание для всех элементов с помощью
-*{
-    margin: 0;
-    padding: 0;
-}
-Также задаём размеры листа А4 для всей нашей веб страницы
-body {
-    width: 210mm;
-    height: 297mm;
-    background: linear-gradient(to top, #9696fb, #f8f9fb, #f8f9fb);
-}
-Применим стили к окну ввода текста для того чтобы
+Поместите его в самый верх файла
