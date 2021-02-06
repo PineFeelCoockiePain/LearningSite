@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans+Condensed:wght@300&family=Roboto+Condensed:wght@700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
+
 body {
-    width: 210mm;
-    height: 297mm;
-    background: linear-gradient(to top, #9696fb, #f8f9fb, #f8f9fb);
+    width: 0; <!-- ширина -->
+    height: 0; <!-- высота -->
+    background: white; <!-- фон -->
 }
+
 input[type="text"] {
-    border: 0;
+    border: none;
     background: #f8f9fb !important;
     outline: none;
     height: 12mm;
@@ -19,17 +21,13 @@ input[type="text"] {
     font-size: 12mm;
 }
 .top, .bot, .footer-bottom {
-    display: flex;
-    flex-flow: column nowrap;
+
 }
 .top, .footer-bottom {
-    align-items: center;
-    text-align: center;
+
 }
 .top {
-    background-image: url("pic/SertificateBg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }
 footer {
     width: 210mm;
