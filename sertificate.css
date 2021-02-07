@@ -33,12 +33,10 @@ footer {
     width: 210mm;
     height: auto;
     flex: 0 0 auto;
-    font-size: 5mm;
     font-weight: bold;
 }
 #picTPK {
     width: 40mm;
-    padding: 5mm 0 10mm 0;
 }
 #TPKdesc {
     text-align: center;
