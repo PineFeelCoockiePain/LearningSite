@@ -39,8 +39,8 @@ code {
 }
 .picTPK {
     float: left;
-    min-width: 50px;
-    max-width: 300px;
+    min-width: 300px;
+    max-width: 500px;
     padding: 0 20px 20px 0;
 }
 .slova {
