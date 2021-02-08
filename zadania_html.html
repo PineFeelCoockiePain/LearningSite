@@ -22,11 +22,10 @@
             padding-left: 50px;
         }
         main {
-            width: 70%;
+            width: 100%;
             display: flex;
             flex-flow: column nowrap;
-            align-items: start;
-
+            align-items: center;
         }
         code {
             background: #ddd7d7;
@@ -39,10 +38,18 @@
             border: 1px solid #e6e6e6;
             text-shadow: 0 1px white;
         }
+        .content {
+            width: 75%;
+            margin-top: 40px;
+            padding: 40px;
+            align-items: start;
+            background-color: white;
+        }
         .pic {
-            align-items: center;
+            float: left;
             min-width: 50px;
             max-width: 300px;
+            padding: 0 20px 20px 0;
         }
         .slova {
 
@@ -59,6 +66,10 @@
     </header>
     <main>
         <div class="content">
+            <div class="slova">
+                <img class="pic" src="pic/HMTPK.svg" alt="Картинка пропала :с"><br>
+                Вот полное название "HMTPK.svg".
+            </div>
             <div class="slova">
                 И так, вот настало время для 1-го задания, поработаем не много в html.
             </div>
@@ -77,10 +88,6 @@
                 Для этого нам понадобится команда <code class="obs"><span><</span><span>img></span></code>.
             </div>
             <div class="slova">
-                <img class="pic" src="pic/HMTPK.svg" alt="gege"><br>
-                Вот полное название "HMTPK.svg".
-            </div>
-            <div class="slova">
                 Пропиши сюда названия фоток и шо с ними там сделать надо<code class="obs"><span><</span><span>img src="Ссылка на фотографию или его полное расположение"></span></code>.
             </div>
             <div class="slova">
@@ -95,7 +102,8 @@
             <div>
                 <pre>
                     <code class="obs"><span><</span><span>div id="tpk1"></span></code>
-                        <code class="obs">Автономное учреждение профессионального образования Ханты-Мансийского автономного округа- Югры Ханты-Мансийский технолого-педагогический колледж</code>
+                        <code class="obs">Автономное учреждение профессионального образования Ханты-Мансийского</code>
+                        <code class="obs">автономного округа- Югры Ханты-Мансийский технолого-педагогический колледж</code>
                     <code class="obs"><span><</span><span>/div></span></code>
                 </pre>
             </div>
