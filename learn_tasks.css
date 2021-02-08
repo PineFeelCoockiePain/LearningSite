@@ -1,0 +1,47 @@
+body {
+    background-color: #F8F9FB;
+    background-position-x: initial;
+    background-position-y: initial;
+}
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #147ABD;
+    color: white;
+    display: flex;
+    align-items: start;
+    padding-left: 50px;
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+code {
+    background: #ddd7d7;
+    padding: 1px 1px;
+    border-radius: 1px;
+    font-size: 0.95em;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+    word-break: keep-all;
+    border: 1px solid #e6e6e6;
+    text-shadow: 0 1px white;
+}
+.content {
+    width: 75%;
+    margin-top: 40px;
+    padding: 40px;
+    align-items: start;
+    background-color: white;
+}
+.picTPK {
+    float: left;
+    min-width: 50px;
+    max-width: 300px;
+    padding: 0 20px 20px 0;
+}
+.slova {
+    font-family: "Comic Sans MS";
+}
