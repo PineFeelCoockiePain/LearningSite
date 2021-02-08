@@ -12,6 +12,15 @@
             background-position-x: initial;
             background-position-y: initial;
         }
+        header {
+            width: 100%;
+            height: 50px;
+            background-color: #147ABD;
+            color: white;
+            display: flex;
+            align-items: start;
+            padding-left: 50px;
+        }
         main {
             width: 70%;
             display: flex;
@@ -36,11 +45,11 @@
             max-width: 300px;
         }
         .slova {
-            font-family: 'Comic Sans MS';
+
         }
     </style>
     <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="wave.css">
+    <link rel="stylesheet" href="learn_tasks.css">
 </head>
 <body>
     <header>
@@ -49,220 +58,219 @@
         </div>
     </header>
     <main>
-        <div class="slova">
-            И так, вот настало время для 1-го задание, поработаем не много в html.
-        </div>
-        <div class="slova">
-            Для начала создадим класс <code class="obs"><span><</span><span>main></span></code>, это будет основа нашего сертификата.
-        </div>
-        <div class="slova">
-            <pre>
-                <code class="obs"><<span class="">main</span>></code>
-                    <code class="obs">...</code>
-                <code class="obs"><<span class="">/main</span>></code>
-            </pre>
-        </div>
-        <div class="slova">
-            Давайте попробуем заменить картинку на логотип ХМТПК на сертификате.<br>
-            Для этого нам понадобится команда <code class="obs"><span><</span><span>img></span></code>.
-        </div>
-        <div class="slova">
-            <img class="pic" src="pic/HMTPK.svg" alt="gege"><br>
-            Вот полное название "HMTPK.svg".
-        </div>
-        <div class="slova">
-            Давайте возьмем любую фотку из интернета и пропишем команду <code class="obs"><span><</span><span>img src="Ссылка на фотографию или его полное расположение"></span></code>.
-        </div>
-        <div class="slova">
-            А теперь подставь логотип, только вместо примера напиши полное название картинки, и пишем это все в классе<code class="obs"><span><</span><span>main></span></code>.
-        </div>
-        <div>
-            <code class="obs"><span><</span><span>img src="HMTPK.svg"></span></code>
-        </div>
-        <div class="slova">
-            Теперь придется не много по писать, расспишем полное название колледжа, для этого создадим ячейки <code class="obs"><span><</span><span>div></span></code> с <code class="obs"><span><</span><span>id="Можно хоть как его назвать"></span></code>, или можно взять название из примера.
-        </div>
-        <div>
-            <pre>
-                <code class="obs"><span><</span><span>div id="tpk1"></span></code>
-                    <code class="obs">Автономное учреждение профессионального образования Ханты-Мансийского автономного округа- Югры Ханты-Мансийский технолого-педагогический колледж</code>
-                <code class="obs"><span><</span><span>/div></span></code>
-            </pre>
-        </div>
-        <div class="slova">
-            Теперь попробуй прописать абзацы командой <code class="obs"><span><</span><span>br></span></code> как показано на примере.
-        </div>
-        <div>
-             <pre>
-                 <code class="obs"><span><</span><span>div id="tpk1"></span></code>
-                    <code class="obs">Автономное учреждение профессионального образования <span><</span><span>br></span></code>
-                    <code class="obs">Ханты-Мансийского автономного округа- Югры <span><</span><span>br></span></code>
-                    <code class="obs">Ханты-Мансийский технолого-педагогический колледж</code>
-                <code class="obs"><span><</span><span>/div></span></code>
-            </pre>
-        </div>
-        <div class="slova">
-            Уже что-то более менее, но давай добавим е большой стиль в <code class="obs"><span><</span><span>div></span></code> в 3-ем абзаце, вот так он записывается <code class="obs"><span><</span><span>div style="text-transform: *Название атрибута*"></span></code>, но мы будем использовать только такой атрибут <code class="obs"><span><</span><span>uppercase></span></code>.
-        </div>
-        <div>
-             <pre>
-                 <code class="obs"><span><</span><span>div id="tpk1"></span></code>
-                    <code class="obs">Автономное учреждение профессионального образования <span><</span><span>br></span></code>
-                    <code class="obs">Ханты-Мансийского автономного округа- Югры <span><</span><span>br></span></code>
-                    <code class="obs"><span><</span><span>div style="text-transform: uppercase"></span>Ханты-Мансийский технолого-педагогический колледж</code>
-                <code class="obs"><span><</span><span>/div></span></code>
-            </pre>
-        </div>
-        <div class="slova">
-            Так же обязательно сделаем только прописные буквы в 3-ем абзаце добавив команду <code class="obs"><span><</span><span>q></span></code>.
-        </div>
-        <div>
-             <pre>
-                 <code class="obs"><span><</span><span>div id="tpk1"></span></code>
-                    <code class="obs">Автономное учреждение профессионального образования <span><</span><span>br></span></code>
-                    <code class="obs">Ханты-Мансийского автономного округа- Югры <span><</span><span>br></span></code>
-                    <code class="obs"><span><</span><span>div style="text-transform: uppercase"></span><span><</span><span>q></span>Ханты-Мансийский технолого-педагогический колледж<span><</span><span>/q></span><span><</span><span>/div></span></code>
-                <code class="obs"><span><</span><span>/div></span></code>
-            </pre>
-        </div>
-        <div class="slova">
-            Ну теперь может добавить не много текста "Сертификат" и "Свидетельствует о том, что", надо будет сделать все так же, что делали ранее. Но только сделаем <code class="obs"><span><</span><span>id></span></code> другого названия или как у меня в примере.
-        </div>
-        <div>
-            <pre>
-                <code class="obs"><span><</span><span>div id="mid_desc1" style="text-transform: uppercase"></span></code>
-                    <code class="obs">Сертификат</code>
-                <code class="obs"><span><</span><span>/div></span></code>
-            </pre>
-        </div>
-        <div class="slova">
-            А в другой строчке сделай стиль другой <code class="obs"><span><</span><span>lowercase></span></code>, этот атрибут отвечает за строчные буквы.
-        </div>
-        <div>
-            <pre>
-                <code class="obs"><span><</span><span>div id="mid_desc2" style="text-transform: lowercase"></span></code>
-                    <code class="obs">Свидетельствует о том, что</code>
-                <code class="obs"><span><</span><span>/div></span></code>
-            </pre>
-        </div>
-        <div class="slova">
-            Далее, мы сделаем место для вашей фамилии и имя.
-        </div>
-        <div>
-            <pre>
-                <code class="obs"><span><</span><span>div id="my_name"></span></code>
-                    <code class="obs"><span><</span><span>input></span></code>
-                <code class="obs"><span><</span><span>/div></span></code>
-            </pre>
-        </div>
-        <div class="slova">
-            Создание информации о прохождение курсов, вот текст:
-        </div>
-        <div class="slova">
-            "Прошёл(а) курсы профессиональных проб в бюджетном учреждении профессионального образования Ханты-Мансийского автономного округа- Югры Ханты-Мансийский технолого педагогический колледж По дополнительной общеразвивающей программе введение в специальность Информационные системы и программирование в объёме 12 часов"
-        </div>
-        <div class="slova">
-            Ну а теперь не только напишем текст, но и сразу его не много изменим.
-        </div>
-        <div>
-            <pre>
-                <code class="obs"><span><</span><span>div id="bot_desc1" style="text-align: center"></span></code>
-                    <code class="obs"><span><</span><span>p></span></code>
-                        <code class="obs">Прошёл(а) курсы профессиональных проб в</code>
-                    <code class="obs"><span><</span><span>/p></span></code>
-                    <code class="obs"><span><</span><span>p></span></code>
-                        <code class="obs">бюджетном учреждении профессионального образования<span><</span><span>br></span></code>
-                        <code class="obs">Ханты-Мансийского автономного округа- Югры<span><</span><span>br></span></code>
-                        <code class="obs"><span><</span><span>q></span>Ханты-Мансийский технолого педагогический колледж<span><</span><span>/q></span></code>
-                    <code class="obs"><span><</span><span>/p></span></code>
-                    <code class="obs"><span><</span><span>p></span></code>
-                        <code class="obs">По дополнительной общеразвивающей программе<span><</span><span>br></span></code>
-                        <code class="obs">введение в специальность<span><</span><span>br></span></code>
-                        <code class="obs"><span><</span><span>q></span>Информационные системы и программирование<span><</span><span>/q></span></code>
-                    <code class="obs"><span><</span><span>/p></span></code>
-                    <code class="obs"><span><</span><span>p></span></code>
-                        <code class="obs">в объёме</code>
-                    <code class="obs"><span><</span><span>/p></span></code>
-                <code class="obs"><span><</span><span>/div></span></code>
-                <code class="obs"><span><</span><span>div id="bot_desc2"></span></code>
-                    <code class="obs"><span><</span><span>p></span></code>
-                        <code class="obs">12 часов</code>
-                    <code class="obs"><span><</span><span>/p></span></code>
-                <code class="obs"><span><</span><span>/div></span></code>
-            </pre>
-        </div>
-        <div class="slova">
-            Закончили работать с классом <code class="obs"><span><</span><span>main></span></code>, теперь создаим класс <code class="obs"><span><</span><span>footer></span></code>.
-        </div>
-        <div>
-            <pre>
-                <code class="obs"><span><</span><span>footer></span></code>
-                    <code class="obs"><span>...</span></code>
-                <code class="obs"><span><</span><span>/footer></span></code>
-            </pre>
-        </div>
-        <div class="slova">
-            Добавим строки "Руководитель" и "Секретарь".
-        </div>
-        <div>
-            <pre>
-                <code class="obs"><span><</span><span>p></span></code>
-                    <code class="obs">Руководитель</code>
-                <code class="obs"><span><</span><span>/p></span></code>
-                <code class="obs"><span><</span><span>p></span></code>
-                    <code class="obs">Саробаров А.Б.</code>
-                <code class="obs"><span><</span><span>/p></span></code>
-                <code class="obs"><span><</span><span>p></span></code>
-                    <code class="obs">Секретарь</code>
-                <code class="obs"><span><</span><span>/p></span></code>
-                <code class="obs"><span><</span><span>p></span></code>
-                    <code class="obs">Шмидт Е.В.</code>
-                <code class="obs"><span><</span><span>/p></span></code>
-            </pre>
-        </div>
-        <div class="slova">
-            Теперь не много по добавляем <code class="obs"><span><</span><span>id></span></code> и <code class="obs"><span><</span><span>class></span></code>, придумав сноё название или скопировав с примера <code class="obs"><span><</span><span>id="*Название*"></span></code> и <code class="obs"><span><</span><span>class="*Название*"></span></code>
-        </div>
-        <div>
-            <pre>
-                <code class="obs"><span><</span><span>div class="footer-top"</span></code>
-                    <code class="obs"><span><</span><span>div id="rukovoditel"></span></code>
-                        <code class="obs"><span><</span><span>p id="rukovoditel1"></span></code>
-                            <code class="obs">Руководитель</code>
+        <div class="content">
+            <div class="slova">
+                И так, вот настало время для 1-го задания, поработаем не много в html.
+            </div>
+            <div class="slova">
+                Для начала создадим класс <code class="obs"><span><</span><span>main></span></code>, это будет основа нашего сертификата.
+            </div>
+            <div class="slova">
+                <pre>
+                    <code class="obs"><<span class="">main</span>></code>
+                        <code class="obs">...</code>
+                    <code class="obs"><<span class="">/main</span>></code>
+                </pre>
+            </div>
+            <div class="slova">
+                Давайте попробуем заменить картинку на логотип ХМТПК на сертификате.<br>
+                Для этого нам понадобится команда <code class="obs"><span><</span><span>img></span></code>.
+            </div>
+            <div class="slova">
+                <img class="pic" src="pic/HMTPK.svg" alt="gege"><br>
+                Вот полное название "HMTPK.svg".
+            </div>
+            <div class="slova">
+                Пропиши сюда названия фоток и шо с ними там сделать надо<code class="obs"><span><</span><span>img src="Ссылка на фотографию или его полное расположение"></span></code>.
+            </div>
+            <div class="slova">
+                А теперь подставьте логотип, только вместо примера напишите полное название картинки, и пишем это все в классе<code class="obs"><span><</span><span>main></span></code>.
+            </div>
+            <div>
+                <code class="obs"><span><</span><span>img src="HMTPK.svg"></span></code>
+            </div>
+            <div class="slova">
+                Теперь придется не много по писать, распишем полное название колледжа, для этого создадим ячейки <code class="obs"><span><</span><span>div></span></code> с <code class="obs"><span><</span><span>id="Можно хоть как его назвать"></span></code>, или можно взять название из примера.
+            </div>
+            <div>
+                <pre>
+                    <code class="obs"><span><</span><span>div id="tpk1"></span></code>
+                        <code class="obs">Автономное учреждение профессионального образования Ханты-Мансийского автономного округа- Югры Ханты-Мансийский технолого-педагогический колледж</code>
+                    <code class="obs"><span><</span><span>/div></span></code>
+                </pre>
+            </div>
+            <div class="slova">
+                Теперь попробуйте прописать абзацы командой <code class="obs"><span><</span><span>br></span></code> как показано на примере.
+            </div>
+            <div>
+                 <pre>
+                     <code class="obs"><span><</span><span>div id="tpk1"></span></code>
+                        <code class="obs">Автономное учреждение профессионального образования <span><</span><span>br></span></code>
+                        <code class="obs">Ханты-Мансийского автономного округа- Югры <span><</span><span>br></span></code>
+                        <code class="obs">Ханты-Мансийский технолого-педагогический колледж</code>
+                    <code class="obs"><span><</span><span>/div></span></code>
+                </pre>
+            </div>
+            <div class="slova">
+                Уже что-то более менее, но давайте добавим не большой стиль в <code class="obs"><span><</span><span>div></span></code> в 3-ем абзаце, вот так он записывается <code class="obs"><span><</span><span>div style="text-transform: *Название атрибута*"></span></code>, но мы будем использовать только такой атрибут <code class="obs"><span><</span><span>uppercase></span></code>.
+            </div>
+            <div>
+                 <pre>
+                     <code class="obs"><span><</span><span>div id="tpk1"></span></code>
+                        <code class="obs">Автономное учреждение профессионального образования <span><</span><span>br></span></code>
+                        <code class="obs">Ханты-Мансийского автономного округа- Югры <span><</span><span>br></span></code>
+                        <code class="obs"><span><</span><span>div style="text-transform: uppercase"></span>Ханты-Мансийский технолого-педагогический колледж</code>
+                    <code class="obs"><span><</span><span>/div></span></code>
+                </pre>
+            </div>
+            <div class="slova">
+                Также заключим название колледжа в ковычки с помощью атрибута <code class="obs"><span><</span><span>q></span></code>.
+            </div>
+            <div>
+                 <pre>
+                     <code class="obs"><span><</span><span>div id="tpk1"></span></code>
+                        <code class="obs">Автономное учреждение профессионального образования <span><</span><span>br></span></code>
+                        <code class="obs">Ханты-Мансийского автономного округа- Югры <span><</span><span>br></span></code>
+                        <code class="obs"><span><</span><span>div style="text-transform: uppercase"></span><span><</span><span>q></span>Ханты-Мансийский технолого-педагогический колледж<span><</span><span>/q></span><span><</span><span>/div></span></code>
+                    <code class="obs"><span><</span><span>/div></span></code>
+                </pre>
+            </div>
+            <div class="slova">
+                Теперь можем добавить не много текста "Сертификат" и "Свидетельствует о том, что", надо будет сделать все так же, что делали ранее. Но только сделаем <code class="obs"><span><</span><span>id></span></code> другого названия или как у меня в примере.
+            </div>
+            <div>
+                <pre>
+                    <code class="obs"><span><</span><span>div id="mid_desc1" style="text-transform: uppercase"></span></code>
+                        <code class="obs">Сертификат</code>
+                    <code class="obs"><span><</span><span>/div></span></code>
+                </pre>
+            </div>
+            <div class="slova">
+                В другой строке сделаем все буквы строчными с помощью <code class="obs"><span><</span><span>lowercase></span></code>
+            </div>
+            <div>
+                <pre>
+                    <code class="obs"><span><</span><span>div id="mid_desc2" style="text-transform: lowercase"></span></code>
+                        <code class="obs">Свидетельствует о том, что</code>
+                    <code class="obs"><span><</span><span>/div></span></code>
+                </pre>
+            </div>
+            <div class="slova">
+                Далее, мы сделаем место для вашей фамилии и имя.
+            </div>
+            <div>
+                <pre>
+                    <code class="obs"><span><</span><span>div id="my_name"></span></code>
+                        <code class="obs"><span><</span><span>input></span></code>
+                    <code class="obs"><span><</span><span>/div></span></code>
+                </pre>
+            </div>
+            <div class="slova">
+                Создание информации о прохождение курсов, текст:
+            </div>
+            <div class="slova">
+                "Прошёл(а) курсы профессиональных проб в бюджетном учреждении профессионального образования Ханты-Мансийского автономного округа- Югры Ханты-Мансийский технолого педагогический колледж По дополнительной общеразвивающей программе введение в специальность Информационные системы и программирование в объёме 12 часов"
+            </div>
+            <div class="slova">
+                Ну а теперь не только напишем текст, но и сразу его не много изменим.
+            </div>
+            <div>
+                <pre>
+                    <code class="obs"><span><</span><span>div id="bot_desc1" style="text-align: center"></span></code>
+                        <code class="obs"><span><</span><span>p></span></code>
+                            <code class="obs">Прошёл(а) курсы профессиональных проб в</code>
                         <code class="obs"><span><</span><span>/p></span></code>
-                        <code class="obs"><span><</span><span>p id="rukovoditel2"></span></code>
-                            <code class="obs">Саробаров А.Б.</code>
+                        <code class="obs"><span><</span><span>p></span></code>
+                            <code class="obs">бюджетном учреждении профессионального образования<span><</span><span>br></span></code>
+                            <code class="obs">Ханты-Мансийского автономного округа- Югры<span><</span><span>br></span></code>
+                            <code class="obs"><span><</span><span>q></span>Ханты-Мансийский технолого педагогический колледж<span><</span><span>/q></span></code>
+                        <code class="obs"><span><</span><span>/p></span></code>
+                        <code class="obs"><span><</span><span>p></span></code>
+                            <code class="obs">По дополнительной общеразвивающей программе<span><</span><span>br></span></code>
+                            <code class="obs">введение в специальность<span><</span><span>br></span></code>
+                            <code class="obs"><span><</span><span>q></span>Информационные системы и программирование<span><</span><span>/q></span></code>
+                        <code class="obs"><span><</span><span>/p></span></code>
+                        <code class="obs"><span><</span><span>p></span></code>
+                            <code class="obs">в объёме</code>
                         <code class="obs"><span><</span><span>/p></span></code>
                     <code class="obs"><span><</span><span>/div></span></code>
-                    <code class="obs"><span><</span><span>div id="sekretar"></span></code>
-                        <code class="obs"><span><</span><span>p id="sekretar1"></span></code>
-                            <code class="obs">Секретарь</code>
-                        <code class="obs"><span><</span><span>/p></span></code>
-                        <code class="obs"><span><</span><span>p id="sekretar2"></span></code>
-                            <code class="obs">Шмидт Е.В.</code>
+                    <code class="obs"><span><</span><span>div id="bot_desc2"></span></code>
+                        <code class="obs"><span><</span><span>p></span></code>
+                            <code class="obs">12 часов</code>
                         <code class="obs"><span><</span><span>/p></span></code>
                     <code class="obs"><span><</span><span>/div></span></code>
-                <code class="obs"><span><</span><span>/div></span></code>
-            </pre>
-        </div>
-        <div class="slova">
-            Ну практически мы закончили работать в html, осталось только город и год добавить
-        </div>
-        <div class="slova">
-            Cразу запишим их в ячейку с классом
-        </div>
-        <div>
-            <pre>
-                <code class="obs"><span><</span><span>div class="footer-bottom"></span></code>
-                    <code class="obs">г. Ханты-Мансийск, 2021г.</code>
-                <code class="obs"><span><</span><span>/div></span></code>
-            </pre>
-        </div>
-        <div class="slova">
-            Молодец, теперь осталось чуть чуть. Импортируй css файл с помощью данной ссылки <code><span><</span><span>link rel="stylesheet" href="gramota.css"></span></code>
-        </div>
-        <div class="button_to_2">
-            <a href="sertificate_sample.html">Пример сертификата</a>
+                </pre>
+            </div>
+            <div class="slova">
+                Закончили работать с классом <code class="obs"><span><</span><span>main></span></code>, теперь создаим класс <code class="obs"><span><</span><span>footer></span></code> (подвал).
+            </div>
+            <div>
+                <pre>
+                    <code class="obs"><span><</span><span>footer></span></code>
+                        <code class="obs"><span>...</span></code>
+                    <code class="obs"><span><</span><span>/footer></span></code>
+                </pre>
+            </div>
+            <div class="slova">
+                Добавим строки "Руководитель" и "Секретарь" ПЕРЕДЕЛАТЬ В ОДНО, ибо нужно сразу с классами и id делать, ибо типы ничего не поймут.
+            </div>
+            <div>
+                <pre>
+                    <code class="obs"><span><</span><span>p></span></code>
+                        <code class="obs">Руководитель</code>
+                    <code class="obs"><span><</span><span>/p></span></code>
+                    <code class="obs"><span><</span><span>p></span></code>
+                        <code class="obs">Саробаров А.Б.</code>
+                    <code class="obs"><span><</span><span>/p></span></code>
+                    <code class="obs"><span><</span><span>p></span></code>
+                        <code class="obs">Секретарь</code>
+                    <code class="obs"><span><</span><span>/p></span></code>
+                    <code class="obs"><span><</span><span>p></span></code>
+                        <code class="obs">Шмидт Е.В.</code>
+                    <code class="obs"><span><</span><span>/p></span></code>
+                </pre>
+            </div>
+            <div class="slova">
+                Теперь не много по добавляем <code class="obs"><span><</span><span>id></span></code> и <code class="obs"><span><</span><span>class></span></code>, придумав сноё название или скопировав с примера <code class="obs"><span><</span><span>id="*Название*"></span></code> и <code class="obs"><span><</span><span>class="*Название*"></span></code>
+            </div>
+            <div>
+                <pre>
+                    <code class="obs"><span><</span><span>div class="footer-top"</span></code>
+                        <code class="obs"><span><</span><span>div id="rukovoditel"></span></code>
+                            <code class="obs"><span><</span><span>p id="rukovoditel1"></span></code>
+                                <code class="obs">Руководитель</code>
+                            <code class="obs"><span><</span><span>/p></span></code>
+                            <code class="obs"><span><</span><span>p id="rukovoditel2"></span></code>
+                                <code class="obs">Саробаров А.Б.</code>
+                            <code class="obs"><span><</span><span>/p></span></code>
+                        <code class="obs"><span><</span><span>/div></span></code>
+                        <code class="obs"><span><</span><span>div id="sekretar"></span></code>
+                            <code class="obs"><span><</span><span>p id="sekretar1"></span></code>
+                                <code class="obs">Секретарь</code>
+                            <code class="obs"><span><</span><span>/p></span></code>
+                            <code class="obs"><span><</span><span>p id="sekretar2"></span></code>
+                                <code class="obs">Шмидт Е.В.</code>
+                            <code class="obs"><span><</span><span>/p></span></code>
+                        <code class="obs"><span><</span><span>/div></span></code>
+                    <code class="obs"><span><</span><span>/div></span></code>
+                </pre>
+            </div>
+            <div class="slova">
+                Ну практически мы закончили работать в html, осталось только город и год добавить
+            </div>
+            <div class="slova">
+                Cразу запишим их в ячейку с классом
+            </div>
+            <div>
+                <pre>
+                    <code class="obs"><span><</span><span>div class="footer-bottom"></span></code>
+                        <code class="obs">г. Ханты-Мансийск, 2021г.</code>
+                    <code class="obs"><span><</span><span>/div></span></code>
+                </pre>
+            </div>
+            <div class="button_to_2">
+                <a href="sertificate_sample.html">Пример сертификата</a>
+            </div>
         </div>
     </main>
 </body>
