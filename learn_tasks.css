@@ -44,11 +44,11 @@ code {
 .btn_back {
     padding: 8px 30px;
     margin: auto 60px;
-    background-color: #ec9d26;
+    background-color: #FFA100;
     font-size: 20px;
     text-transform: uppercase;
     font-family: "Segoe UI Semibold";
-    color: #ffffff;
+    color: #000000;
     border-radius: 20px 20px 20px 20px;
 }
 .picTPK {
