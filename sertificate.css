@@ -43,14 +43,14 @@ footer {
     font-size: 5mm;
     color: #F8F9FB;
 }
-#mid_desc1 {
+#mid-desc1 {
     padding: 20mm 0 0 0;
     text-transform: uppercase;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20mm;
     color: #F8F9FB;
 }
-#mid_desc2 {
+#mid-desc2 {
     padding: 0 0 5mm 0;
     text-transform: lowercase;
     font-size: 12mm;
@@ -59,10 +59,10 @@ footer {
     padding: 10mm 0 10mm 0;
     font-size: 7mm;
 }
-#bot_desc1 {
+#bot-desc1 {
     text-align: center;
 }
-#bot_desc2 {
+#bot-desc2 {
     text-align: right;
     padding-right: 10mm;
 }
