@@ -28,9 +28,6 @@
             так и элементы целиком, такие как <code><span><</span><span>body></span></code>, <code><span><</span><span>main></span></code>, <code><span><</span><span>input></span></code> и так далее
         </div>
         <div class="slova">
-            <b>Пункт 1-ый</b>
-        </div>
-        <div class="slova">
             Именование с помощью <q>class</q> нужно если к нескольким элементам необходимо применить одинаковую стилизацию
         </div>
         <div class="slova">
@@ -57,9 +54,6 @@
             </pre>
         </div>
         <div class="slova">
-            <b>Пункт 2-ой</b>
-        </div>
-        <div class="slova">
             При изменении вида элемента, стилизация применяется во всем элементам этого типа и вложенным в них
         </div>
         <div class="slova">
@@ -73,7 +67,7 @@
             </pre>
         </div>
         <div class="slova">
-            <b>Пункт 3-ий</b>
+            <b>Пункт 1-ый</b>
         </div>
         <div class="slova">
             В <q>html</q> файл вашего сертификата импортируйте css файл в нижнюю часть <code><span><</span>head></code>
@@ -84,22 +78,22 @@
             </pre>
         </div>
         <div class="slova">
-            <b>Пункт 4-ый</b>
+            <b>Пункт 2-ой</b>
         </div>
         <div class="slova">
-            Осталось только его отредактировать
+            Приступим к редактированию css файла
         </div>
         <div class="slova">
-            Импортируйте шрифты с помощью данной функции
+            Импортируйте шрифты с помощью данной функции на первую строку
         </div>
         <div>
             <code>@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto+Condensed:wght@700&family=Source+Sans+Pro:wght@300;400&display=swap');</code>
         </div>
         <div class="slova">
-            Зададим ширину и высоту страницы (элемент body) под размеры листа A4: ширина 210mm, высота 297mm
+            Зададим ширину и высоту страницы для элемента <q>body</q> под размеры листа A4: ширина 210mm, высота 297mm
         </div>
         <div class="slova">
-            Также зададим градиентный фон: вместо белого зададим линейный градиент от низа к верху, функцией:
+            Также для элемента <q>body</q> зададим градиентный фон: вместо белого зададим линейный градиент от низа к верху, функцией:
         </div>
         <div class="slova">
             <pre>
@@ -107,13 +101,13 @@
             </pre>
         </div>
         <div class="slova">
-            <b>Пункт 5-ый</b>
+            <b>Пункт 3-ий</b>
         </div>
         <div class="slova">
-            Для элементов <code>.top, .bot, .footer-bottom</code> зададим атрибуты <code>display: flex</code> (Элемент генерирует структурный блок, который создает адаптивный контейнер для дочерних элементов.) и <code>flex-flow: column</code> (построение элементов колонной) <code>nowrap</code> (запрет на смещение элементов)
+            Для группы элементов <code>.top, .bot, .footer-bottom</code> зададим атрибуты <code>display: flex</code> (Элемент генерирует структурный блок, который создает адаптивный контейнер для дочерних элементов.) и <code>flex-flow: column</code> (построение элементов колонной) <code>nowrap</code> (запрет на смещение элементов)
         </div>
         <div class="slova">
-            Для элементов <code>.top, .footer-bottom</code> зададим атрибуты <code>align-items: center</code> (смещение элементов по центру); <code>text-align: center</code> (смещение текста по центру)
+            Для группы элементов <code>.top, .footer-bottom</code> зададим атрибуты <code>align-items: center</code> (смещение элементов по центру); <code>text-align: center</code> (смещение текста по центру)
         </div>
         <div class="slova">
             Для элемета <code>.top</code> задать параметры <code>background-image: url</code>("путь к картинке фона"); <code>background-repeat: no-repeat</code> (отмна повтора картинки); <code>background-size: cover</code> (масштабирование изображения по заданным размерам);
@@ -123,6 +117,9 @@
         </div>
         <div class="slova">
             Для элемента <code>#picTPK</code> задайте атрибуты <code>padding</code>(отступы снаружи): <code>5mm</code>(сверху) <code>0</code>(снизу) <code>10mm</code>(справа) <code>0</code>(слева);
+        </div>
+        <div class="slova">
+            Для элемента <code>#TPKdesc</code> задайте атрибут <code>font-family</code>(шрифт): <code>'Source Sans Pro', sans-serif;</code>;
         </div>
         <div class="slova">
             Также, если хотите, можете поиграться с размерами и отступами.
